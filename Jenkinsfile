@@ -17,6 +17,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Run test'
+        git(url: 'https://github.com/Balajiiguru/Python.git', branch: 'master')
       }
     }
 
